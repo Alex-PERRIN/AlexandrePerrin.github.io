@@ -2,94 +2,117 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Site</title>
+  <title>Alexandre Perrin</title>
   <style>
+    /* ======= CSS intégré ======= */
     body {
+      font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(120deg, #1e3c72, #2a5298);
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      padding: 100px 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2em;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: white;
-      color: #2a5298;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #ddd;
-    }
-
-    section {
-      padding: 60px 20px;
-      background: white;
+      padding: 0;
+      line-height: 1.6;
+      background: #f7f7f7;
       color: #333;
     }
 
-    .card {
-      background: #f4f4f4;
+    header {
+      background: #404f5f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.7em;
+    }
+
+    header p {
+      font-size: 0.5em;
+      margin: 5px 0 20px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 15px 20px;
+      max-width: 800px;
       margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      max-width: 400px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: white;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #224364;
+    }
+
+    .card {
+      background: white;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
     }
 
     footer {
+      text-align: center;
       padding: 20px;
-      font-size: 0.9em;
-      background: #111;
+      background: #222;
+      color: white;
+      margin-top: 20px;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Bienvenue sur mon site</h1>
-  <p>Je suis en train de créer quelque chose de stylé</p>
-  <a href="#projets" class="btn">Voir mes projets</a>
-</header>
+  <header>
+    <h1>Alexandre Perrin</h1>
+    <nav>
+      <a href="#accueil">About</a>
+      <a href="#diplomes">Education</a>
+      <a href="#publications">Publication</a>
+      <a href="#enseignement">Teaching</a>
+    </nav>
+  </header>
 
-<section id="projets">
-  <h2>Mes projets</h2>
+  <section style="display: flex; align-items: center; gap: 20px;">
+    <img src="image/photo_site.jpg" style="width:200px; border-radius:50%;">
+    <div>
+      <h2>About</h2>
+      <p>I am currently a PhD sudent in the <a href="https://team.inria.fr/merge/fr">MERGE</a> team at Ecole Polytechnique CMAP under the supervision of <a href="https://team.inria.fr/merge/fr/marie-doumic/">Marie Doumic</a> and <a href="https://sites.google.com/view/sylvie-meleard/">Sylvie Méléard</a> , and in collaboration with <a href="https://edwebprofiles.ed.ac.uk/profile/meriem-el-karoui">Meriem El Karoui</a> . My PhD focuses on the understanding of the coordination of the DNA replication and division cycles in <i>Escherichia coli</i>, through mathematical modelling and statistical analysis. </p> <br>
+      email: alexandre.perrin@polytechnique.edu
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Projet 1</h3>
-    <p>Un truc incroyable que j’ai fait.</p>
-  </div>
+  <section id="diplomes">
+    <h2>Education</h2>
+      <i>2019-2023</i> Engineer degree, AgroParisTech, Institute for Life, Food
+      and Environmental Sciences, Department of Life Sciences and
+      Health ; Specialisation in molecular and cellular bio-engineering, France <br>
+      <i>2022-2023</i> Master degree in mathematics applied to life science, Université Paris-Saclay, Institut Polytechnique de Paris, France<br>
+  </section>
 
-  <div class="card">
-    <h3>Projet 2</h3>
-    <p>Une idée géniale en cours.</p>
-  </div>
+  <section id="publications">
+    <h2>Publication</h2>
+      Perrin, A., Doumic, M., El Karoui, M., & Méléard, S. (2025). <a href ="https://www.biorxiv.org/content/10.1101/2025.07.25.666816v2">Deciphering the Replication-Division Coordination in E. coli: A Unified Mathematical framework for Systematic Model Comparison.</a> bioRxiv, 2025-07.
+  </section>
 
-</section>
+  <section id="enseignement">
+    <h2>Teaching</h2>
+    Probability and Statistics with R, Master X-HEC Data Science for Business <br>
+    Probability Theory and Stochastic Processes, Master of Applied Mathematics, Ecole Polytechnique<br>
+  </section>
 
-<footer>
-  <p>© 2026 - Mon site perso</p>
-</footer>
+  <footer>
+    <p> </p>
+  </footer>
 
 </body>
 </html>
